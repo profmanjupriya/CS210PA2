@@ -1,14 +1,12 @@
 #include <iostream>
 #include <string>
 #include "GameDecisionTree.h"
-
 using namespace std;
-
 int main() {
     GameDecisionTree<Story> myGame;
 
     string filename = "story.txt";  // Specify the input file
-    char delimiter = '|';            //  '|' is the delimiter, change this to ',' if you choose
+    char delimiter = '|';                // '|' is the delimiter, change if needed
 
     // Load the story data from the file
     myGame.loadStoryFromFile(filename, delimiter);

@@ -3,7 +3,6 @@
 
 #include <string>
 using namespace std;
-
 class Story {
 public:
     string description;
@@ -11,8 +10,11 @@ public:
     int leftEventNumber;
     int rightEventNumber;
 
-    Story(string desc, int num, int leftNum, int rightNum)
-            : description(desc), eventNumber(num), leftEventNumber(leftNum), rightEventNumber(rightNum) {}
+    // Default constructor
+    Story();
+
+    // Parameterized constructor
+    Story(string desc, int num, int leftNum, int rightNum);
 };
 
 #endif // STORY_H
